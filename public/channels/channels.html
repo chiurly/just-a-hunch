@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a Hunch</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/channels/channels.css">
+    <script src="/channels/channels.js" defer></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/views">Views</a></li>
+        <li><a href="/channels">Channels</a></li>
+    </ul>
+    <div style="margin-left: 256px">
+        <div style="float: left; padding: 16px; width: 192px">
+            <label for="channels">Channels:</label><br>
+            <textarea readonly id="channels" class="channels" rows="16"></textarea>
+        </div>
+        <div style="float: left; padding: 16px">
+            <label for="channelName">Channel name:</label><br>
+            <input type="text" id="channelName" class="textInput"><br>
+            <input type="button" id="addChannel" class="button" value="Add" onclick="onAddChannelClick()">
+            <input type="button" id="removeChannel" class="button" value="Remove" onclick="onRemoveChannelClick()"><br>
+            <label id="result"></label>
+        </div>
+    </div>
+</body>
+
+</html>

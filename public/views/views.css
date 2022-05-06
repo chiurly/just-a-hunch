@@ -1,0 +1,141 @@
+:root {
+    --accent: hsl(0, 50%, 50%);
+    --accent-hover: hsl(0, 50%, 45%);
+    --accent-active: hsl(0, 50%, 40%);
+    --lightest: hsl(0, 0%, 100%);
+    --lighter: hsl(0, 0%, 90%);
+    --light: hsl(0, 0%, 80%);
+    --dark: hsl(240, 10%, 20%);
+    --darker: hsl(240, 10%, 15%);
+    --darkest: hsl(240, 10%, 10%);
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--lighter);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 256px;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: var(--darkest);
+}
+
+li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: var(--lighter);
+    background-color: var(--darkest);
+}
+
+li a:hover {
+    color: var(--lightest);
+    background-color: var(--darker);
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    min-width: 64px;
+    font-weight: bold;
+    color: var(--lightest);
+    background-color: var(--accent);
+}
+
+.button:hover {
+    background-color: var(--accent-hover);
+}
+
+.button:active {
+    background-color: var(--accent-active);
+}
+
+#mainContainer {
+    margin-left: 256px;
+    padding: 16px;
+    width: fit-content;
+    text-align: center;
+}
+
+#statsContainer {
+    margin-top: 16px;
+}
+
+#question {
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+#score {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+#statsText {
+    margin-bottom: 2px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#score::before {
+    content: 'Score: ';
+}
+
+.channelButton {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 256px;
+    height: 256px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--darker);
+}
+
+.channelImage {
+    width: 256px;
+    height: 256px;
+    transition: transform 0.1s;
+}
+
+.channelText {
+    position: absolute;
+    padding: 4px;
+    width: 248px;
+    z-index: 0;
+    font-size: large;
+    font-weight: bold;
+    color: var(--lightest);
+    background-color: hsl(240, 10%, 15%, 0.5);
+}
+
+#leftChannelButton:hover #leftChannelImage {
+    transform: scale(1.05);
+}
+
+#rightChannelButton:hover #rightChannelImage {
+    transform: scale(1.05);
+}
+
+#leftChannelButton:active #leftChannelImage {
+    transform: scale(1.1);
+}
+
+#rightChannelButton:active #rightChannelImage {
+    transform: scale(1.1);
+}

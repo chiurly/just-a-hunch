@@ -1,0 +1,94 @@
+:root {
+    --accent: hsl(0, 50%, 50%);
+    --accent-hover: hsl(0, 50%, 45%);
+    --accent-active: hsl(0, 50%, 40%);
+    --lightest: hsl(0, 0%, 100%);
+    --lighter: hsl(0, 0%, 90%);
+    --light: hsl(0, 0%, 80%);
+    --dark: hsl(240, 10%, 20%);
+    --darker: hsl(240, 10%, 15%);
+    --darkest: hsl(240, 10%, 10%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--lighter);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 256px;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    background-color: var(--darkest);
+}
+
+li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: var(--lighter);
+    background-color: var(--darkest);
+}
+
+li a:hover {
+    color: var(--lightest);
+    background-color: var(--darker);
+}
+
+.textInput {
+    margin-top: 2px;
+    padding: 4px;
+    width: 192px;
+    border-radius: 6px;
+    border-width: 1px;
+    outline-width: 1px;
+    border: none;
+    outline: solid;
+    outline-width: 0px;
+    outline-color: var(--dark);
+}
+
+.textInput:focus {
+    outline-width: 1px;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    min-width: 64px;
+    font-weight: bold;
+    color: var(--lightest);
+    background-color: var(--accent);
+}
+
+.button:hover {
+    background-color: var(--accent-hover);
+}
+
+.button:active {
+    background-color: var(--accent-active);
+}
+
+.channels {
+    display: block;
+    margin: 0;
+    margin-top: 2px;
+    padding: 4px;
+    width: 184px;
+    resize: none;
+}
+
+#removeChannel {
+    float: right;
+}

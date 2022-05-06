@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a Hunch</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/views/views.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/views/views.js" defer></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="/views">Views</a></li>
+        <li><a href="/channels">Channels</a></li>
+    </ul>
+    <div id="mainContainer">
+        <div id="question">Who has more views on Twitch?</div>
+        <div id="score">0</div>
+        <div id="leftChannelButton" class="channelButton" onclick="onChannelClick('left')">
+            <div id="leftChannelImage" class="channelImage"></div>
+            <div id="leftChannelName" class="channelText" style="top: 0px"></div>
+            <div id="leftChannelViews" class="channelText" style="bottom: 0px"></div>
+        </div>
+        <div style="display: inline-block; width: 8px">
+        </div>
+        <div id="rightChannelButton" class="channelButton" onclick="onChannelClick('right')">
+            <div id="rightChannelImage" class="channelImage"></div>
+            <div id="rightChannelName" class="channelText" style="top: 0px"></div>
+            <div id="rightChannelViews" class="channelText" style="bottom: 0px"></div>
+        </div><br>
+        <input type="button" id="restart" class="button" value="Restart" onclick="onRestartClick()" hidden>
+        <div id="statsContainer">
+            <div id="statsText">Statistics</div>
+            <canvas id="statsChart"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
