@@ -1,6 +1,6 @@
 # Just a Hunch
 
-Just a Hunch is a browser game where the user guesses which [Twitch](https://www.twitch.tv/) channel has a greater total view count.
+Just a Hunch is a [Node.js](https://nodejs.org/en/) browser game where the user guesses which [Twitch](https://www.twitch.tv/) channel has a greater total view count.
 
 ## Installation
 
