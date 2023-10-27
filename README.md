@@ -2,7 +2,7 @@
 
 Just a Hunch is a [Node.js](https://nodejs.org/en/) web app game where the user guesses which [Twitch](https://www.twitch.tv/) channel has a greater total view count.
 
-## Installation
+## Getting started
 
 First, install dependencies with `npm install`
 
