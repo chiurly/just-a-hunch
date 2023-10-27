@@ -4,7 +4,7 @@ Just a Hunch is a [Node.js](https://nodejs.org/en/) browser game where the user 
 
 ## Installation
 
-Install dependencies by enetring the `npm install` CLI command.
+Install dependencies by entering the `npm install` CLI command.
 
 Next, create a ".env" file in the root directory containing:
 ```
